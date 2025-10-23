@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+    background: #f8f9fa;
+    min-height: 100vh;
+    padding-bottom: 60px;
+    color: #212529;
+    line-height: 1.6;
+}
+
+/* Banner */
+.banner {
+    background: #ff4757;
+    text-align: center;
+    padding: 12px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner h1 {
+    color: white;
+    font-size: 1.3em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Header */
+header {
+    background: white;
+    padding: 40px 0 35px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid #e9ecef;
+}
+
+.shop-title {
+    font-size: 2.5em;
+    color: #2d3436;
+    margin-bottom: 8px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.shop-subtitle {
+    color: #6c757d;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Category Section */
+.category-section {
+    background: white;
+    border-radius: 12px;
+    padding: 35px 30px;
+    margin: 25px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
+}
+
+.category-header {
+    text-align: left;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f1f3f5;
+}
+
+.category-header h2 {
+    font-size: 1.6em;
+    color: #2d3436;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background: #fafbfc;
+    border-radius: 8px;
+    padding: 24px 20px;
+    text-align: center;
+    transition: all 0.2s ease;
+    border: 1px solid #e9ecef;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #dee2e6;
+}
+
+.product-icon {
+    font-size: 2.8em;
+    margin-bottom: 12px;
+}
+
+.product-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #2d3436;
+}
+
+.product-desc {
+    font-size: 0.88em;
+    margin-bottom: 16px;
+    color: #6c757d;
+    min-height: 20px;
+}
+
+.price-box {
+    background: white;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 12px;
+    border: 1px solid #e9ecef;
+}
+
+.price-old {
+    display: block;
+    text-decoration: line-through;
+    color: #adb5bd;
+    font-size: 0.9em;
+    margin-bottom: 4px;
+}
+
+.price {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ff4757;
+}
+
+/* Subsection */
+.subsection {
+    margin: 28px 0;
+}
+
+.subsection-title {
+    font-size: 1.15em;
+    color: #495057;
+    margin-bottom: 16px;
+    padding-left: 12px;
+    border-left: 3px solid #ff4757;
+    font-weight: 600;
+}
+
+/* Price Table */
+.price-table {
+    display: grid;
+    gap: 12px;
+}
+
+.price-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.price-cell {
+    background: #fafbfc;
+    padding: 16px;
+    border-radius: 6px;
+    text-align: center;
+    transition: all 0.2s ease;
+    border: 1px solid #e9ecef;
+}
+
+.price-cell:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: #dee2e6;
+}
+
+.dollar {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #5f27cd;
+}
+
+.vnd-old {
+    display: block;
+    text-decoration: line-through;
+    color: #adb5bd;
+    font-size: 0.88em;
+    margin-bottom: 4px;
+}
+
+.vnd {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #ff4757;
+}
+
+/* Footer */
+footer {
+    background: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.08);
+    border-top: 1px solid #e9ecef;
+}
+
+footer p {
+    color: #6c757d;
+    margin: 6px 0;
+    font-size: 0.95em;
+}
+
+footer p:first-child {
+    font-weight: 600;
+    color: #2d3436;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .shop-title {
+        font-size: 2em;
+    }
+    
+    .banner h1 {
+        font-size: 1.1em;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .price-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-section {
+        padding: 25px 20px;
+        margin: 20px 0;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-title {
+        font-size: 1.8em;
+    }
+    
+    .category-header h2 {
+        font-size: 1.4em;
+    }
+    
+    .product-icon {
+        font-size: 2.4em;
+    }
+    
+    header {
+        padding: 30px 0 25px;
+    }
+}
